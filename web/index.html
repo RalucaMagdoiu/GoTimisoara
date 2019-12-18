@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+  <title>GOTimisoara</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/layout.css" type="text/css">
+
+
+</head>
+
+<body>
+  <div class="wrapper row1">
+    <header id="header" class="clear">
+      <div id="hgroup">
+        <h1><a href="#">Go Timisoara</a></h1>
+        <h2>Descopera Capitala Culturala Europeana</h2>
+
+      </div>
+      <div class="navbar">
+        <a href="index.html">Acasa</a>
+        <a href="navigatie.html">Navigatie</a>
+        <div class="dropdown">
+          <button class="dropbtn">Exploreaza
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Atractii.html">Atractii</a>
+            <a href="Muzee.html">Muzee si galerii</a>
+            <a href="Evenimente.html">Evenimente</a>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  </header>
+  </div>
+  <div class="wrapper row2">
+    <div id="container" class="clear">
+      <section id="slider"><a href="#"><img src="images/Timi2.jpg" alt=""></a></section>
+      <strong>“Mica Vienă”, “inima Banatului”, “orașul de pe Bega”, “orașul florilor” - sunt doar câteva din numele cu
+        care locuitorii și turiștii deopotrivă obișnuiesc să alinte Timișoara. Și pe bună dreptate! Departe de a fi
+        orașul tipic, sufocat de construcții fără identitate, Timișoara se încăpățânează să le ofere tuturor celor care
+        îi străbat străzile propriul lor colț de rai fie că asta înseamnă piațete cu un aer boem, clădiri și palate
+        înrădăcinate în istorie, poduri care alunecă romantic peste apusuri, parcuri peste care domnesc mii de soiuri de
+        flori și de copaci sau cluburi în care muzica nu are somn. </strong>
+      <p><strong>Descoperiti Romania prin unul dintre orasele cu cele mai bogate patrimonii arhitecturale si culturale
+          -Timisoara.</strong></p>
+      <div id="homepage">
+        <section id="services" class="clear">
+        </section>
+        <section id="latest">
+
+          <!-- Slideshow -->
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="images/rsz_bega.jpg" style="width:100%">
+              <div class="text">Canalul Bega</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="images/rsz_parc.jpg" style="width:100%">
+              <div class="text">Parcul Rozelor</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="images/rsz_timire2.jpg" style="width:100%">
+              <div class="text">Piata Unirii</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+
+          <script> var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) { slideIndex = 1 }
+              if (n < 1) { slideIndex = slides.length }
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+            } 
+          </script>
+
+          <br></br>
+
+          <article>
+            <figure>
+              <ul class="clear">
+                <li class="one_third"><img src="images/timi10.jpg" width="290" height="180" alt="">
+                  <article class="one_quarter">
+
+                    <strong>Centrul Timișoarei</strong>
+                    <p>Centrul este primul dintre locurile cu care vei dori să faci cunoștiință imediat ce ai ajuns și
+                      ți-ai lăsat bagajele în cameră...</p>
+                    <p class="more"><a href="CentrulTimisoarei.html">Read More &raquo;</a></p>
+                  </article>
+                </li>
+                <li class="one_third"><img src="images/timi8.jpg" width="290" height="180" alt="">
+                  <article class="one_quarter">
+
+                    <strong>Vechea Cetate </strong>
+                    <p>Dacă pornești de la Operă în sus pe strada Mărășești, ai ocazia să mai bifezi și alte puncte
+                      importante de vizitat cu un patrimoniu cultural... </p>
+                    <p class="more"><a href="Atractii.html">Read More &raquo;</a></p>
+                  </article>
+                </li>
+                <li class="one_third lastbox"><img src="images/timi9.jpg" width="290" height="180" alt="">
+                  <article class="one_quarter">
+
+                    <strong>Muzeul Satului Bănățean</strong>
+                    <p>Plimbarea în muzeul satului, construcțiile autentice de demult te vor introduce în viața
+                      bănățenilor din secolele trecute...
+                    </p>
+                    <p class="more"><a href="Muzee.html">Read More &raquo;</a></p>
+                  </article>
+                </li>
+              </ul>
+              <figcaption><a href="#"></a></figcaption>
+            </figure>
+          </article>
+
+        </section>
+
+        <style>
+          
+          #map {
+            height: 400px;
+            
+            width: 100%;
+            
+          }
+        </style>
+
+        <div id="map"></div>
+        <script>
+          
+          function initMap() {
+          
+            var uluru = { lat: 45.7430366, lng: 21.2227881 };
+           
+            var map = new google.maps.Map(
+              document.getElementById('map'), { zoom: 12, center: uluru });
+            
+            
+            var marker2 = new google.maps.Marker({ position: { lat: 45.7430270, lng: 21.2227490 }, map: map, icon: 'images/world.png' });
+          }
+        </script>
+
+        <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+          </script>
+
+      </div>
+    </div>
+
+    <div class="wrapper row3">
+      <footer id="footer" class="clear">
+
+      </footer>
+    </div>
+</body>
+
+</html>

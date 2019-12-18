@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <title>GOTimisoara</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/layout.css" type="text/css">
+
+
+</head>
+
+<body>
+
+
+  <div class="wrapper row1">
+    <header id="header" class="clear">
+      <div id="hgroup">
+        <h1><a href="#">Go Timisoara</a></h1>
+        <h2>Descopera Capitala Culturala Europeana</h2>
+      </div>
+      <div class="navbar">
+        <a href="index.html">Acasa</a>
+        <a href="navigatie.html">Navigatie</a>
+        <div class="dropdown">
+          <button class="dropbtn">Exploreaza
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Atractii.html">Atractii</a>
+            <a href="Muzee.html">Muzee si galerii</a>
+            <a href="Evenimente.html">Evenimente</a>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="wrapper row2">
+    <div id="container" class="clear">
+
+      <h1>Cum ajungi</h1>
+      <p>Cetatea de pe Timis este un oras al parcurilor, al civilizatiei, al timpului care are rabdare cu oamenii si al
+        arhitecturii desprinse din arta vieneza. Orasul a tinut ridicat de-a lungul vremii, standardul de viata, fiind
+        primul oras din Europa continentala cu strazile iluminate electric, orasul unde s-a consemnat prima strada
+        asfaltata de pe teritoriul Romaniei, prima resedinta de judet unde au avut loc proiectii cinematografice... Si
+        debuturile culturale, tehnice si civice pot continua pentru ca nu degeaba si-a insusit acest frumos oras vorba
+        "Banatu'' e fruncea".</p>
+      <section id="slider"><a href="#"><img src="images/timisoara map.jpg" alt=""></a></section>
+      <h1>Cu masina</h1>
+      <p>Distanta dintre Bucuresti – Timisoara este de 558 km si poate fi parcursa in aproximativ 8 ore. Cea mai
+        indicata ruta este Pitesti – Craiova – Timisoara.</p>
+      <h1>Cu trenul</h1>
+      <p>Din Gara de Nord pleaca in fiecare zi trenuri rapid sau accelerat spre Timisoara. Durata calatoriei este de 8
+        ore, iar pretul biletului dus este de 80 – 90 ron.</p>
+      <h1>Cu avionul</h1>
+      <p>Avionul este cea mai rapida si comoda cale de a calatori spre Timisoara. Din Bucuresti pleaca curse de pe
+        aeroportul Henri Coanda, iar durata zborului este de aproximativ 1 ora.</p>
+      <h1>Cand sa vizitezi Timisoara</h1>
+      <p>Cea mai frumoasa perioada pentru a vizita Timisoara este primavara sau toamna, in luna septembrie. Vremea este
+        placuta, copacii infloresc, iar timisorenii ies la terasele din centrul vechi. Atmosfera de sarbatoare te
+        urmareste la tot pasul. Vara, zilele nu sunt la fel de toride ca in Capitala, deci nu ar fi rau daca v-ati
+        petrece un weekend in Banat. Iarna, Timisoara seamana cu un oras de poveste. Zapada pufoasa, instalatiile frumos
+        colorate, targurile de Craciun si casutele de lemn ce impanzesc centrul orasului ii confera un farmec aparte.
+      </p>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/targ-timisoara-4.jpg" style="width:100%">
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/iarna.jpg" style="width:100%">
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/primavara.jpg" style="width:100%">
+          <div class="text"></div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <script> var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) { slideIndex = 1 }
+          if (n < 1) { slideIndex = slides.length }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        } 
+      </script>
+
+      <h1>Unde sa te cazezi</h1>
+      <p>Hotelul <a href="http://iosefinresidence.ro/"> Iosefin Residence</a> se afla in Piata Maria, foarte aproape de
+        Biserica Sinai si la scurta distanta
+        de principalele atractii ale orasului: Timisoara City Center, muzee, centrul vechi, parcuri si universitate.
+        Complexul are 35 apartamente elegante dotate cu 2 camere, bucatarie echipata, baie, incalzire, telefon, TV
+        plasma, radio cu ceas, internet, aer conditionat. Pretul unei nopti de cazare porneste de la 54 euro si ajunge
+        pana la 95 euro (apartamentele business).
+      </p>
+      <p>Hotelul <a href="https://www.laresidenza.ro/">La Residenza </a> se afla in apropiere de centrul orasului,
+        intr-o zona cu multa verdeata. Hotelul pune
+        la dispozitie o gradina unde poate fi servit micul dejun, restaurant, acces gratuit la Internet, sauna, piscina,
+        seif.
+        Hotelul are 20 camere, iar pretul unei nopti de cazare porneste de la 80 euro si ajunge pana la 145 euro
+        (apartamente de lux).
+      </p>
+      <p>Hotelul <a href="http://www.hotel-vanilla.ro/welcome">Vanilla </a> a fost construit in 2009 si se afla in
+        apropiere de Centrul de Afaceri si Complexul
+        Studentesc. Camerele cu mobilier modern, personalul bine pregatit si restaurantul cu un meniu bogat garanteaza
+        un sejur placut la hotel Vaniila. Hotelul are 20 camere si un apartament, iar pretul unei nopti de cazare
+        porneste de la 46 euro si ajunge pana la 89 euro (apartament de lux).
+      </p>
+      <p>Hotelul <a href="https://www.victoria-hotel.ro/">Victoria </a> este situat in centrul istoric al orasului
+        Timisoara, pe o straduta care face legatura
+        intre Piata Unirii si Piata Victoriei. Cu o istorie de peste 60 ani, hotelul Victoria pune la dispozitia
+        turistilor receptie 24h, room service, acces Internet gratuit, camera de bagaje si seif. Hotelul are 15 camere
+        elegante, dotate cu baie cu dus sau cada, uscator de par, aer conditionat, telefon, TV si jacuzzi (in
+        apartament). Pretul unei nopti de cazare porneste de la 55 euro si ajunge pana la 100 euro (apartament de lux).
+      </p>
+      <p>Pensiunile pot fi o alegere excelenta. Recomandarile noastre sunt: <a href="http://casa-anna.ro/">Vila Casa
+          Anna </a> este situata la 500 m de
+        Iulius Mall si ofera linistea si odihna de care aveti nevoie dupa o zi agitata in Timisoara. Vila dispune de
+        curte si terasa cu parcare interioara, camerele sunt climatizate, dotate cu dus, frigider si televizor. Pretul
+        unei nopti de cazare este de 120 ron.
+      </p>
+      <p>Pensiunea <a href="http://www.pensiunea-tony.ro/">Tony </a> se afla la 15 minute de mers pe jos de centrul orasului si dispune de parcare pazita, loc de
+        joaca pentru copii, acces bucatarie si gradina cu pomi fructiferi. Pensiunea are 12 locuri de cazare in camere
+        dotate cu paturi duble sau triple, baie proprie, TV cablu, internet, antena parabolica si aer conditionat.
+        Pretul unei nopti de cazare este de 100 ron
+      </p>
+
+
+
+      <div id="homepage">
+        <section id="services" class="clear">
+        </section>
+
+      </div>
+      <div id="content">
+        <section id="posts" class="last clear">
+          <ul>
+            <li>
+              <article class="clear">
+                <figure><img src="images/timi6.jpg" alt="">
+                  <figcaption>
+                    <h2>Restaurante</h2>
+                    <p>Am prins drag de câteva localuri drăguțe din Timișoara unde se mănâncă bine, iar în acest post vă vom povesti puțin despre fiecare...</p>
+                    <footer class="more"><a href="restaurante.html">Read More &raquo;</a></footer>
+                  </figcaption>
+                </figure>
+              </article>
+            </li>
+            <li class="last">
+              <article class="clear">
+                <figure><img src="images/timi7.jpg" alt="">
+                  <figcaption>
+                    <h2>Nightlife</h2>
+                    <p>Cu o multime de studenti din toate colturile tarii, viata de noapte din Timisoara este vibranta. Numeroase cluburi,baruri si terase...</p>
+                    <footer class="more"><a href="Nightlife.html">Read More &raquo;</a></footer>
+                  </figcaption>
+                </figure>
+              </article>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="wrapper row3">
+    <footer id="footer" class="clear">
+
+    </footer>
+  </div>
+</body>
+
+</html>

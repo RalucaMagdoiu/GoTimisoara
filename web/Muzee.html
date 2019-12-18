@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>GOTimisoara</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/layout.css" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+  <div class="wrapper row1">
+    <header id="header" class="clear">
+      <div id="hgroup">
+        <h1><a href="#">Go Timisoara</a></h1>
+        <h2>Descopera Capitala Culturala Europeana</h2>
+
+      </div>
+      <div class="navbar">
+        <a href="index.html">Acasa</a>
+        <a href="navigatie.html">Navigatie</a>
+        <div class="dropdown">
+          <button class="dropbtn">Exploreaza
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Atractii.html">Atractii</a>
+            <a href="Muzee.html">Muzee si galerii</a>
+            <a href="Evenimente.html">Evenimente</a>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="wrapper row2">
+    <div id="container" class="clear">
+      <section id="slider"><a href="#"><img src="images/Muzeul-de-Arta-Timisoara.jpg" alt=""></a></section>
+      <h1>Muzeul de Arta</h1></br>
+      <p>Muzeul de Artă din Timișoara este un muzeu de artă aflat în Palatul Baroc din Timișoara. Muzeul a luat ființă
+        după desprinderea secțiunii de artă a Muzeului Banatului, care a funcționat o perioadă într-o aripă din actuala
+        clădire. </p>
+      <p>
+        Actualul muzeu este rezultatul unui proces care a durat peste 120 de ani. Începuturile colecției - care a dat
+        naștere secțiunii de artă a Muzeului Banatului - sunt consemnate în 1879, când Ormós Zsigmond (1813-1893),
+        fondatorul Societății Muzeale din Ungaria de Sud, colecționar și istoric de artă, își donează colecția
+        substanțială de pictură europeană noii instituți. În 1940 muzeul este reorganizat de directorul Aurel Ciupe,
+        care separă secțiunile pe categorii. Astfel ia ființă Secțiunea artistică sau Pinacoteca. </p><br>
+      <br>
+
+      <section id="slider"><a href="#"><img src="images/465.jpg" alt=""></a></section>
+      <h1>Muzeul Militar</h1>
+      <p>Muzeul Militar din Timișoara este un muzeu din Timișoara, încadrat de cIMeC la categoria „muzee în subordinea
+        unui minister (în afară de Ministerul Culturii)”. Este amplasat în Piața Libertății nr. 5. Muzeul
+        Militar Timișoara este organizat în șase săli, cinci dintre ele reflectând perioade distincte din istoria
+        României — Decebal, Evul Mediu timpuriu, Evul Mediu, Mihai Viteazul, Unirea Principatelor Române și cele două
+        războaie mondiale — și sala numită „Sala armelor și a ținutelor militare”, cuprinzând exponate de acest gen din
+        diferite perioade istorice. Patrimoniul muzeului este format din peste 2000 de obiecte muzeale: hărți, documente
+        de epocă, machete ale unor monumente istorice, fotografii, armament și ținute militare.</p>
+
+
+      <section id="slider"><a href="#"><img src="images/Castelul-Huniade-Timisoara-Foto-Renasterea.jpg" alt=""></a></section>
+      <h1>Castelul Huniade</h1></br>
+      <p>Castelul Huniade este un monument istoric și cea mai veche clădire din Timișoara, construit între anii
+        1308–1315 de Carol Robert de Anjou și reconstruit după cutremurul din 1443 de către Ioan de Hunedoara. Castelul
+        medieval a fost distrus în timpul asediului Timișoarei din 1849 și refăcut în forma actuală în 1856.</p>
+      <p>
+        În ciuda numeroaselor modificări, castelul și-a păstrat organizarea în jurul unei curți patrulatere, poziția
+        turnului-donjon și "Sala Cavalerilor", detalii care care se regăsesc și la Castelul Corvineștilor de la
+        Hunedoara. Fațada principală a fost refăcută într-un stil romantic. Ferestrele, terminate în arc în plin cintru
+        dar cu decorație neogotică deasupra, au luat locul orificiilor pentru piesele de artilerie iar fațada a fost
+        realizată în cărămidă aparentă. Primul etaj, construit pe înălțimea a două caturi normale conține două săli
+        boltite în stil neogotic, una cu trei nave iar cealaltă cu două ce sunt construite din cărămidă și susținute de
+        un șir de coloane masive.
+
+        Clădirea se termină în plan vertical printr-un etaj mansardă iar din punct de vedere al plasticii exterioare, în
+        partea superioară a fațadei se află un coronament crenelat. </p>
+
+      <section id="slider"><a href="#"><img src="images/muzeusat.jpg" alt=""></a></section>
+      <h1>Muzeul Satului Banatean </h1></br>
+      <p>Muzeul Satului Banatean este singurul muzeu etnografic, in aer liber, care cuprinde centrul civic ala satului:
+        Primaria, Biserica, Scoala, Caminul cultural si Birtul. In muzeu se intalnesc case cu prispa deschisa, case cu
+        acoperisul sprijinit pe stalpi de lemn frumos decorati prin cioplire si castrare, case acoperite cu paie sau
+        sindrila, case de mesteri olari, un atelier de olarie si mori, vaiugi si oloinite.
+        Muzeul este deschis in fiecare zi, intre orele 10.00 – 18.00, iar pretul biletului este de 4 ron.</p>
+    
+
+      <div id="homepage">
+        <section id="services" class="clear">
+        </section>
+
+
+        <style>
+         
+          #map {
+            height: 400px;
+            
+            width: 100%;
+           
+          }
+        </style>
+
+        <div id="map"></div>
+        <script>
+          
+          function initMap() {
+           
+            var Centru = { lat: 45.7430366, lng: 21.2227881 };
+            
+            var map = new google.maps.Map(
+              document.getElementById('map'), { zoom: 12, center: Centru });
+            
+
+            var markerMuzMili = new google.maps.Marker({ position: { lat: 45.7551358, lng: 21.2272411 }, map: map, icon: 'images/landmark.png' });
+            var markerMuzArta = new google.maps.Marker({ position: { lat: 45.7574288, lng: 21.229251 }, map: map, icon: 'images/landmark.png' });
+            var markerHuniade = new google.maps.Marker({ position: { lat: 45.7530756, lng: 21.2270325 }, map: map, icon: 'images/landmark.png' });
+            var markerMuzSat = new google.maps.Marker({ position: { lat: 45.777227, lng: 21.2660004 }, map: map, icon: 'images/landmark.png' });
+            
+          }
+        </script>
+
+        <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+          </script>
+
+
+
+      </div>
+    </div>
+
+    <div class="wrapper row3">
+      <footer id="footer" class="clear">
+
+      </footer>
+    </div>
+</body>
+
+</html>
